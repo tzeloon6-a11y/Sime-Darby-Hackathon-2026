@@ -1,0 +1,1228 @@
+<!DOCTYPE html><html class="h-full bg-surface-container-high/40" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sime Darby Circularity - UCO Recycling &amp; Rewards</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration matching Brand Tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-container": "#b8f1b0",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#9dd496",
+            "on-secondary-container": "#3d6f3c",
+            "on-surface-variant": "#414940",
+            "tertiary-fixed-dim": "#90d795",
+            "surface-bright": "#ecffe6",
+            "tertiary-container": "#256a34",
+            "tertiary": "#03511e",
+            "primary-fixed-dim": "#9fd3a0",
+            "surface-dim": "#cddfc7",
+            "secondary-fixed": "#b8f1b0",
+            "inverse-on-surface": "#e4f6dd",
+            "primary-container": "#38673d",
+            "on-tertiary": "#ffffff",
+            "surface": "#ecffe6",
+            "surface-container-lowest": "#ffffff",
+            "surface-tint": "#3a693e",
+            "surface-container-high": "#dbedd5",
+            "inverse-surface": "#253424",
+            "surface-container-low": "#e7f9e0",
+            "outline-variant": "#c1c9bd",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-surface": "#111f10",
+            "on-primary-container": "#afe3af",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#d6e8d0",
+            "on-tertiary-fixed-variant": "#05521f",
+            "on-tertiary-container": "#9fe8a4",
+            "surface-container": "#e1f3db",
+            "on-primary-fixed": "#002107",
+            "secondary": "#376936",
+            "background": "#ecffe6",
+            "on-background": "#111f10",
+            "error": "#ba1a1a",
+            "on-secondary-fixed": "#002204",
+            "on-tertiary-fixed": "#002108",
+            "on-primary-fixed-variant": "#215029",
+            "tertiary-fixed": "#abf4af",
+            "surface-container-highest": "#d6e8d0",
+            "primary": "#204f27",
+            "primary-fixed": "#bbf0ba",
+            "inverse-primary": "#9fd3a0",
+            "on-secondary-fixed-variant": "#1f5121",
+            "outline": "#72796f"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "label-lg": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-1 {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Hide scrollbars for smooth prototype feel */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.03); opacity: 1; }
+    }
+    .scanner-pulse {
+      animation: pulse-subtle 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="h-full text-on-surface antialiased bg-surface-container-high/40 flex flex-col items-center">
+<!-- TOP JUDGES DEMO SCREEN SWITCHER BAR -->
+<header class="w-full bg-primary text-on-primary py-2.5 px-3 z-50 shadow-md">
+</header>
+<!-- AUTHENTIC MOBILE DEVICE CANVAS CONTAINER -->
+<main class="w-full max-w-md flex-1 bg-surface-container-low min-h-screen flex flex-col relative shadow-[0_12px_48px_-8px_rgba(32,79,39,0.18)] my-0 sm:my-3 sm:rounded-[36px] sm:border-8 sm:border-inverse-surface/10 overflow-hidden">
+<!-- REUSABLE TOP APP BAR -->
+<div class="bg-surface-container-lowest text-primary flex justify-between items-center w-full px-4 h-16 max-w-md mx-auto sticky top-0 z-40 shadow-[0_4px_20px_-2px_rgba(56,103,61,0.05)] border-b border-outline-variant/30 transition-all duration-200" id="shared-top-bar">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-primary">
+<img alt="Sime Darby Property Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS1FI2j9aQPNmOuUMad9M89VVAOrGvPPVQWcBZ7haiEcdfYJahHpEosZUakwGWItiPZMPh83aJjePRrDd8KFqw3mdz0BzUdXc-zFVoOjrLWdCRugtgJ9G1eaeGm_vplrQHed5E-bWOuup_m5AujlINNy22w4nfU_6LEtFbezAFjAlw9fQt-3C1g6aEPR8wOwvt9_ihldroFWEbMWhzvtUAYNCLZq1PdygoQJFDLmT6W63DxFClBDodg4ZkdVSm_oDbNc8">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm font-bold text-primary tracking-tight">Sime Darby Circularity</span>
+<span class="text-[11px] text-on-surface-variant leading-none">City of Elmina Hub</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Notifications" class="p-2 rounded-full hover:bg-surface-container transition-colors relative active:scale-95" onclick="showToast('No new unread alerts')">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">notifications</span>
+<span class="w-2 h-2 rounded-full bg-error absolute top-2 right-2"></span>
+</button>
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs ring-1 ring-primary/20 hover:scale-105 transition-all" onclick="switchScreen('screen-login')" title="Resident Alex Tan Profile">
+          AT
+        </button>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- SCREEN 1: LOGIN                            -->
+<!-- ========================================== -->
+<section class="screen-view hidden flex-col flex-1 px-5 py-6 bg-surface-container-lowest justify-between min-h-[640px]" id="screen-login">
+<div>
+<!-- Logo & Branding -->
+<div class="flex flex-col items-center text-center pt-4 pb-4">
+<div class="w-24 h-24 mb-3 drop-shadow-md rounded-2xl overflow-hidden flex items-center justify-center p-1 bg-surface-container-lowest border border-outline-variant/20">
+<img alt="Sime Darby Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS1FI2j9aQPNmOuUMad9M89VVAOrGvPPVQWcBZ7haiEcdfYJahHpEosZUakwGWItiPZMPh83aJjePRrDd8KFqw3mdz0BzUdXc-zFVoOjrLWdCRugtgJ9G1eaeGm_vplrQHed5E-bWOuup_m5AujlINNy22w4nfU_6LEtFbezAFjAlw9fQt-3C1g6aEPR8wOwvt9_ihldroFWEbMWhzvtUAYNCLZq1PdygoQJFDLmT6W63DxFClBDodg4ZkdVSm_oDbNc8">
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container text-xs font-semibold mb-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            Property Living • Circular Future
+          </span>
+<h1 class="font-headline-lg font-bold text-primary tracking-tight text-2xl">Sime Darby Circularity</h1>
+<p class="font-label-md text-on-surface font-semibold text-xs mt-0.5">Community UCO Recycling &amp; Rewards Programme</p>
+<p class="text-xs text-on-surface-variant max-w-[280px] mt-1.5 italic">"Turn household cooking waste into clean biofuel."</p>
+</div>
+<!-- Login Form -->
+<form class="space-y-3.5 mt-2" onsubmit="handleLoginSubmit(event)">
+<div>
+<label class="block text-xs font-semibold text-on-surface-variant mb-1">Email / Resident ID</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-lg">mail</span>
+<input class="w-full pl-9 pr-3 py-2 text-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface placeholder-outline transition-all" id="login-email" placeholder="name@elmina.my" required="" type="email" value="alex.tan@elmina.my">
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-1">
+<label class="block text-xs font-semibold text-on-surface-variant">Password</label>
+<a class="text-xs text-primary font-medium hover:underline" href="javascript:void(0)" onclick="showToast('Password reset link sent to registered email.')">Forgot password?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-lg">lock</span>
+<input class="w-full pl-9 pr-3 py-2 text-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface transition-all" id="login-password" required="" type="password" value="••••••••••••">
+</div>
+</div>
+<div class="flex items-center justify-between text-xs pt-1">
+<label class="flex items-center gap-2 cursor-pointer text-on-surface-variant">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4" type="checkbox">
+<span class="">Remember this device</span>
+</label>
+<span class="text-[11px] text-tertiary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs fill-1">verified_user</span> Elmina Secure SSO
+            </span>
+</div>
+<button class="w-full mt-3 py-3 px-4 rounded-lg bg-primary text-on-primary font-headline-sm font-semibold hover:bg-primary-container transition-all shadow-[0_4px_16px_rgba(32,79,39,0.2)] active:scale-[0.98] flex items-center justify-center gap-2 text-sm" type="submit">
+<span class="">Sign In (Resident)</span>
+<span class="material-symbols-outlined text-base">login</span>
+</button>
+</form>
+<!-- Judge Fast Track Buttons -->
+<div class="mt-4 p-3 rounded-xl bg-surface-container-low border border-outline-variant/40">
+<p class="text-[11px] font-semibold text-primary uppercase tracking-wider mb-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">explore</span> Hackathon Evaluation Fast-Track:
+          </p>
+<div class="grid grid-cols-2 gap-2">
+<button class="px-2.5 py-2 text-[11px] rounded-lg bg-surface-container-lowest border border-primary/30 text-primary font-semibold hover:bg-secondary-container/40 transition-colors text-left flex flex-col active:scale-95" onclick="switchScreen('screen-storage-guide')">
+<span class="font-bold flex items-center gap-1">Step 1: Guide →</span>
+<span class="text-[10px] text-on-surface-variant font-normal">First-time resident</span>
+</button>
+<button class="px-2.5 py-2 text-[11px] rounded-lg bg-primary text-on-primary font-semibold hover:bg-primary-container transition-colors text-left flex flex-col active:scale-95 shadow-sm" onclick="switchScreen('screen-home')">
+<span class="font-bold flex items-center gap-1">Step 2: Home →</span>
+<span class="text-[10px] text-on-primary-container font-normal">Returning resident</span>
+</button>
+</div>
+</div>
+</div>
+<div class="text-center pt-3 border-t border-outline-variant/30 text-[11px] text-on-surface-variant/80">
+        © 2025 Sime Darby Property Berhad • ESG Circularity Initiative
+      </div>
+</section>
+<!-- ========================================== -->
+<!-- SCREEN 2: USED COOKING OIL STORAGE GUIDE   -->
+<!-- ========================================== -->
+<section class="screen-view flex-col flex-1 px-4 py-5 bg-surface-container-low pb-28 overflow-y-auto no-scrollbar hidden" id="screen-storage-guide">
+<!-- Title & Safety Banner -->
+<div class="mb-4">
+<button class="text-xs text-primary font-medium flex items-center gap-1 mb-2 hover:underline" onclick="switchScreen('screen-home')">
+<span class="material-symbols-outlined text-sm">arrow_back</span> Return to Dashboard
+        </button>
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-secondary-container text-on-secondary-container">
+          Household Protocol
+        </span>
+<h2 class="text-xl font-headline-lg font-bold text-primary mt-1">Used Cooking Oil (UCO) Storage Guide</h2>
+<p class="text-xs text-on-surface-variant mt-0.5">Follow these 5 essential steps to prepare high-grade oil for conversion to clean aviation fuel.</p>
+</div>
+<!-- High Priority Safety Box -->
+<div class="p-3.5 rounded-xl bg-error-container/40 border border-error/30 text-on-surface flex items-start gap-3 mb-4 shadow-sm">
+<span class="material-symbols-outlined text-error text-xl shrink-0 mt-0.5">warning</span>
+<div>
+<h4 class="text-xs font-bold text-error tracking-tight">CRITICAL SAFETY NOTICE</h4>
+<p class="text-[11px] text-on-surface-variant leading-relaxed mt-0.5">Hot oil causes severe container warping, toxic vapor release, and severe burns. Always cool completely below 40°C before pouring.</p>
+</div>
+</div>
+<!-- 5 Instructional Step Cards -->
+<div class="space-y-3 mb-6">
+<!-- Step 1 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm shrink-0">
+            1
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-base">thermostat</span>
+<h3 class="text-xs font-bold text-on-surface">Allow Oil to Cool Completely (&lt;40°C)</h3>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-snug">Let pan or fryer rest for at least 60-90 minutes. Never pour hot or warm oil directly into household plastic bottles.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm shrink-0">
+            2
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-base">filter_alt</span>
+<h3 class="text-xs font-bold text-on-surface">Filter Out Leftover Food Particles</h3>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-snug">Pour oil through a fine kitchen metal mesh sieve or cheesecloth to remove charred food residue. Clean oil maximizes refinery yield.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm shrink-0">
+            3
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-base">inventory_2</span>
+<h3 class="text-xs font-bold text-on-surface">Pour into Clean, Dry Sealed Container</h3>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-snug">Repurpose clear 1.5L - 5L cooking oil bottles or Sime Darby Circularity jerrycans. Ensure the cap locks tightly to prevent odor.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm shrink-0">
+            4
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-base">water_drop</span>
+<h3 class="text-xs font-bold text-on-surface">Strict Separation: No Water or Liquids</h3>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-snug">Do not mix with soapy sink dishwater, motor oils, or gravy. Even 2% water contamination degrades kiosk smart sensor readings.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm shrink-0">
+            5
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">local_convenience_store</span>
+<h3 class="text-xs font-bold text-on-surface">Drop Off at Sime Darby Smart Kiosk</h3>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-snug">Take your full bottle to Elmina Central Kiosk #01 or #02. Scan your screen QR to log weight and earn 50 Eco-Points / kg instantly.</p>
+</div>
+</div>
+</div>
+<!-- Action Button & Notice -->
+<div class="space-y-2">
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-headline-sm font-semibold hover:bg-primary-container transition-all shadow-[0_4px_16px_rgba(32,79,39,0.18)] active:scale-95 flex items-center justify-center gap-2 text-sm" onclick="switchScreen('screen-home')">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span class="">Back to Home Dashboard</span>
+</button>
+<p class="text-center text-[11px] text-on-surface-variant">
+          You can revisit this guide anytime from your bottom navigation or dashboard.
+        </p>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SCREEN 3: SCAN KIOSK QR                    -->
+<!-- ========================================== -->
+<section class="screen-view flex-col flex-1 px-4 py-5 bg-inverse-surface text-surface pb-28 overflow-y-auto no-scrollbar flex" id="screen-scan">
+<div class="flex items-center justify-between mb-3 text-surface">
+<button class="flex items-center gap-1 text-xs text-primary-fixed hover:text-white transition-colors" onclick="switchScreen('screen-home')">
+<span class="material-symbols-outlined text-sm">close</span> Exit Scanner
+        </button>
+<span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-white/10 text-primary-fixed border border-white/10">
+          Hardware Link Active
+        </span>
+</div>
+<div class="text-center mb-3">
+<h2 class="text-lg font-headline-lg font-bold text-white">Show Your QR Code</h2>
+<p class="text-[11px] text-white/70 max-w-xs mx-auto">
+          Show this QR Code to Sime Darby Smart Kiosk <br>to redeem your point!</p>
+</div>
+<!-- Viewfinder Overlay Box -->
+<div class="relative w-64 h-64 mx-auto my-2 rounded-2xl overflow-hidden border-2 border-white/20 bg-black/40 flex items-center justify-center">
+<!-- Pulse frame animation -->
+<div class="absolute inset-4 rounded-xl border border-dashed border-primary-fixed/40 scanner-pulse"></div>
+<!-- Corner Reticles -->
+<div class="absolute top-3 left-3 w-6 h-6 border-t-4 border-l-4 border-secondary-fixed rounded-tl"></div>
+<div class="absolute top-3 right-3 w-6 h-6 border-t-4 border-r-4 border-secondary-fixed rounded-tr"></div>
+<div class="absolute bottom-3 left-3 w-6 h-6 border-b-4 border-l-4 border-secondary-fixed rounded-bl"></div>
+<div class="absolute bottom-3 right-3 w-6 h-6 border-b-4 border-r-4 border-secondary-fixed rounded-br"></div>
+<!-- Simulated QR Glyph -->
+<div class="text-center p-3 flex flex-col items-center justify-center z-10"><div class="p-2 bg-white rounded-xl shadow-lg border border-white/20 flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByf2kCjNqo8y5uAcY2FH31uVuuSJgUjdH64Nz7W3fSAwpMTMUyZvmUW3zqRg1qtSfi0Mxl6TochltFg6nb9I3ttlsib04PfHjsTkseaCYICDqdKSfr-hf_WeuI-KmxOMiGXWA4lzjnlKIfstuBHbPAwynpH6Y-G_J2rUrVJR5aFhxPBqu103O17k4r6YVG4P_xS1mRX0AB4qF5x9Qy0B1eK82bFkQx4M4xSRYsL91-IfzgzT7Zy0OMKwEJMTpnTkDdPrk" alt="QR Code" class="w-36 h-36 rounded-lg object-contain bg-white"></div><p class="text-[10px] text-primary-fixed mt-2 font-mono tracking-wider font-semibold uppercase">ALIGN KIOSK QR</p></div>
+<!-- Laser scanning line -->
+<div class="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-secondary-fixed to-transparent animate-bounce top-1/2"></div>
+</div>
+<!-- Demo Trigger & Fallback Actions -->
+<div class="mt-4 space-y-2.5">
+<button class="w-full py-3 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-headline-sm font-bold hover:bg-secondary-fixed-dim transition-all active:scale-95 shadow-[0_4px_16px_rgba(184,241,176,0.3)] flex items-center justify-center gap-2 text-sm" onclick="triggerSimulatedScan()">
+<span class="material-symbols-outlined text-lg">tap_and_play</span>
+<span class="">Simulate Kiosk Scan (5.0 kg deposit)</span>
+</button>
+<button class="w-full py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition-all flex items-center justify-center gap-1.5" onclick="openManualInput()">
+<span class="material-symbols-outlined text-sm">pin</span>
+<span class="">Enter 6-digit Kiosk Terminal Code Manually</span>
+</button>
+</div>
+<div class="mt-4 text-center">
+
+</div>
+</section>
+<!-- KIOSK SCAN VERIFICATION MODAL -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs items-center justify-center p-4 hidden" id="kiosk-deposit-modal">
+<div class="bg-surface-container-lowest max-w-sm w-full rounded-2xl p-5 shadow-2xl border border-primary/20 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2 text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-secondary fill-1">check_circle</span>
+<span class="">Kiosk Deposit Detected!</span>
+</div>
+<span class="text-[10px] bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold font-mono">LIVE LINK</span>
+</div>
+<div class="py-3 space-y-2 text-xs">
+<div class="flex justify-between py-1 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Kiosk Station</span>
+<span class="font-bold text-on-surface" id="modal-station-name">Elmina Central Kiosk #02</span>
+</div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Measured Net Weight</span>
+<span class="font-extrabold text-base text-primary" id="modal-weight">5.00 kg</span>
+</div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Points Earned (50 pts/kg)</span>
+<span class="font-bold text-tertiary text-sm" id="modal-points">+250 Eco-Points</span>
+</div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Cash / Subsidy Value</span>
+<span class="font-bold text-on-surface">RM 12.50</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Transaction Ref</span>
+<span class="font-mono text-[11px] text-outline" id="modal-tx-ref">UCO-ELM-56658</span>
+</div>
+</div>
+<div class="mt-2 p-2.5 rounded-lg bg-surface-container-low text-[11px] text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">oil_barrel</span>
+<span class="">Sample tested: Grade A UCO (Moisture &lt; 0.5%). Ready for biofuel conversion.</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-4">
+<button class="py-2.5 rounded-lg border border-outline-variant text-xs font-semibold text-on-surface hover:bg-surface-container transition-colors" onclick="closeDepositModal()">
+            Cancel
+          </button>
+<button class="py-2.5 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-primary-container transition-all shadow-md active:scale-95 flex items-center justify-center gap-1" onclick="confirmDepositTransaction()">
+<span class="">Confirm &amp; Add</span>
+<span class="material-symbols-outlined text-sm">account_balance_wallet</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- SCREEN 4: HOME DASHBOARD                   -->
+<!-- ========================================== -->
+<section class="screen-view flex-col flex-1 px-4 py-4 bg-surface-container-low pb-28 overflow-y-auto no-scrollbar hidden" id="screen-home">
+<!-- Resident Greeting & Township Header -->
+<div class="flex items-center justify-between mb-4 bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(56,103,61,0.05)]">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center text-primary font-headline-md font-bold text-sm">
+            AT
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-on-surface">Alex Tan</h2>
+<span class="text-[10px] px-2 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Tier 2 Champion</span>
+</div>
+<p class="text-[11px] text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-xs text-primary">location_on</span>
+              City of Elmina (Elmina Green 3)
+            </p>
+</div>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container text-primary hover:bg-secondary-container transition-colors" onclick="switchScreen('screen-storage-guide')" title="Storage Guide">
+<span class="material-symbols-outlined text-lg">menu_book</span>
+</button>
+</div>
+<!-- Primary Balance & Impact Metrics (Bento Grid) -->
+<div class="grid grid-cols-2 gap-2.5 mb-4">
+<!-- Main Points Metric (Span 2) -->
+<div class="col-span-2 p-4 rounded-2xl bg-gradient-to-br from-primary via-primary to-primary-container text-on-primary shadow-[0_8px_24px_-4px_rgba(32,79,39,0.25)] relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-white/5 pointer-events-none"></div>
+<div class="flex justify-between items-start">
+<span class="text-xs font-medium text-on-primary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-sm fill-1">toll</span> Available Eco-Points
+            </span>
+<span class="text-[10px] px-2 py-0.5 rounded-full bg-white/15 text-white font-medium">Auto-updated</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-xl text-3xl font-extrabold tracking-tight" id="dashboard-points">750</span>
+<span class="text-xs text-on-primary-container font-medium">pts (≈ RM 37.50)</span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-white/15 flex items-center justify-between text-xs">
+<span class="text-[11px] text-white/80">Next milestone: 1,000 pts</span>
+<button class="text-[11px] text-secondary-fixed font-bold hover:underline flex items-center gap-0.5" onclick="switchScreen('screen-rewards')">
+              Redeem Vouchers →
+            </button>
+</div>
+</div>
+<!-- Metric 2: Total UCO Recycled -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant font-medium">Total Recycled</span>
+<div class="w-6 h-6 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xs">oil_barrel</span>
+</div>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-1">
+<span class="text-xl font-headline-md font-bold text-on-surface" id="dashboard-total-kg">17.5</span>
+<span class="text-xs font-semibold text-outline">kg</span>
+</div>
+<span class="text-[10px] text-tertiary font-semibold flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-xs">trending_up</span> +5.0 kg recently
+            </span>
+</div>
+</div>
+<!-- Metric 3: Total Completed Drops -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant font-medium">Drop Deposits</span>
+<div class="w-6 h-6 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xs">task_alt</span>
+</div>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-1">
+<span class="text-xl font-headline-md font-bold text-on-surface" id="dashboard-total-drops">4</span>
+<span class="text-xs font-semibold text-outline">sessions</span>
+</div>
+<span class="text-[10px] text-tertiary font-semibold flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-xs">verified</span> 100% Verified
+            </span>
+</div>
+</div>
+</div>
+<!-- High-Visibility Main CTA: Scan Kiosk QR -->
+<button class="w-full mb-4 py-3.5 px-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline-sm font-bold shadow-[0_6px_20px_-2px_rgba(32,79,39,0.3)] transition-all active:scale-[0.98] flex items-center justify-between group" onclick="switchScreen('screen-scan')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-2xl">qr_code_scanner</span>
+</div>
+<div class="text-left">
+<div class="text-sm font-bold flex items-center gap-1.5">
+<span class="">Scan Kiosk QR Code</span>
+<span class="text-[10px] px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">Earn Pts</span>
+</div>
+<p class="text-[11px] text-on-primary-container">At Elmina Community Smart Oil Depository</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
+</button>
+<!-- Quick-Access Action Grid -->
+<div class="mb-4">
+</div>
+<!-- Elmina Township Collective Goal Progress -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] mb-4">
+<div class="flex justify-between items-center text-xs mb-1.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">nest_eco_leaf</span>
+<span class="font-bold text-on-surface">Elmina Township Target</span>
+</div>
+<span class="font-bold text-tertiary">340 / 500 kg (68%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-secondary h-2.5 rounded-full" style="width: 68%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant mt-1.5">
+          160 kg remaining for Elmina Green to unlock the Community Solar Bench Upgrade!
+        </p>
+</div>
+<!-- Recent Deposit Snippet -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)]">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-on-surface">Recent Recycling Deposit</span>
+<button class="text-[11px] text-primary font-semibold hover:underline" onclick="switchScreen('screen-impact')">View All</button>
+</div>
+<div class="flex items-center justify-between text-xs py-1" id="home-recent-transaction">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base">ev_station</span>
+</div>
+<div>
+<p class="font-bold text-on-surface" id="recent-station">Elmina Central Kiosk #01</p>
+<p class="text-[10px] text-outline" id="recent-date">Today, 10:15 AM • 4.2 kg</p>
+</div>
+</div>
+<div class="text-right">
+<span class="text-xs font-bold text-tertiary" id="recent-pts">+210 pts</span>
+<span class="block text-[9px] px-1.5 py-0.2 rounded-full bg-secondary-container/60 text-on-secondary-container font-semibold">Verified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SCREEN 5: REWARDS & VOUCHERS               -->
+<!-- ========================================== -->
+<section class="screen-view flex-col flex-1 px-4 py-4 bg-surface-container-low pb-28 overflow-y-auto no-scrollbar hidden" id="screen-rewards">
+<!-- Balance Banner -->
+<div class="p-4 rounded-2xl bg-primary text-on-primary mb-3 shadow-[0_6px_20px_-2px_rgba(32,79,39,0.2)] flex items-center justify-between">
+<div>
+<span class="text-[11px] text-on-primary-container block font-medium">Your Current Wallet Balance</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="text-2xl font-headline-lg font-bold" id="rewards-screen-balance">750</span>
+<span class="text-xs text-on-primary-container font-semibold">Eco-Points</span>
+</div>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-medium flex items-center gap-1 active:scale-95" onclick="showToast('Balance updated live')">
+<span class="material-symbols-outlined text-xs">sync</span> Refresh
+        </button>
+</div>
+<!-- Notice Banner -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-[11px] text-on-surface-variant flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">info</span>
+<span class="">Illustrative demo partner rewards for hackathon preview.</span>
+</div>
+<!-- Voucher Catalog Cards -->
+<h3 class="text-xs font-bold text-on-surface uppercase tracking-wider mb-2">Available Vouchers</h3>
+<div class="space-y-3 mb-5">
+<!-- Voucher 1 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">local_mall</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-on-surface">RM5 Grocer Voucher</h4>
+<p class="text-[11px] text-on-surface-variant">Jaya Grocer / Lotus's • Min spend RM30</p>
+<span class="inline-block mt-1 text-[11px] font-bold text-primary">500 points</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-semibold hover:bg-primary-container transition-all active:scale-95 shrink-0" onclick="promptRedeem('RM5 Grocer Voucher', 500, 'JAYA-5RM-ELM91')">
+            Redeem
+          </button>
+</div>
+<!-- Voucher 2 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-on-surface">RM10 Grocer Voucher</h4>
+<p class="text-[11px] text-on-surface-variant">Village Grocer • All Fresh Items</p>
+<span class="inline-block mt-1 text-[11px] font-bold text-primary">900 points</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-semibold hover:bg-primary-container transition-all active:scale-95 shrink-0" onclick="promptRedeem('RM10 Grocer Voucher', 900, 'VILL-10RM-ELM22')">
+            Redeem
+          </button>
+</div>
+<!-- Voucher 3 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">coffee</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-on-surface">15% Partner Cafe Discount</h4>
+<p class="text-[11px] text-on-surface-variant">Elmina Lakeside Dining • Food &amp; Drinks</p>
+<span class="inline-block mt-1 text-[11px] font-bold text-primary">300 points</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-semibold hover:bg-primary-container transition-all active:scale-95 shrink-0" onclick="promptRedeem('15% Partner Cafe Discount', 300, 'CAFE-15PCT-ELM55')">
+            Redeem
+          </button>
+</div>
+<!-- Voucher 4 -->
+<div class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">forest</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-on-surface">Elmina Central Park Tree</h4>
+<p class="text-[11px] text-on-surface-variant">Urban Biodiversity Tree Planting Badge</p>
+<span class="inline-block mt-1 text-[11px] font-bold text-primary">450 points</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-semibold hover:bg-primary-container transition-all active:scale-95 shrink-0" onclick="promptRedeem('Elmina Central Park Tree Planting Contribution', 450, 'TREE-DON-ELM04')">
+            Redeem
+          </button>
+</div>
+</div>
+<!-- Redeemed Vouchers History Container -->
+<div>
+<h3 class="text-xs font-bold text-on-surface uppercase tracking-wider mb-2">My Active Vouchers (<span class="" id="redeemed-count">1</span>)</h3>
+<div class="space-y-2.5" id="redeemed-vouchers-list">
+<div class="p-3 bg-surface-container-lowest rounded-xl border border-secondary/30">
+<div class="flex justify-between items-start">
+<div>
+<span class="text-[10px] uppercase font-bold text-tertiary">Ready to Use at Counter</span>
+<h5 class="text-xs font-bold text-on-surface">RM5 Grocer Voucher (Welcome Perk)</h5>
+</div>
+<span class="px-2 py-0.5 rounded text-[9px] font-bold bg-secondary-container text-on-secondary-container">ACTIVE</span>
+</div>
+<div class="mt-2 p-2 bg-surface-container-low rounded font-mono text-[11px] flex justify-between items-center">
+<span class="">ELMINA-WELCOME-7729</span>
+<span class="material-symbols-outlined text-base text-outline">qr_code</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- REDEMPTION MODAL -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden items-center justify-center p-4" id="reward-confirm-modal">
+<div class="bg-surface-container-lowest max-w-sm w-full rounded-2xl p-5 shadow-2xl border border-primary/20">
+<h4 class="font-headline-sm text-sm font-bold text-on-surface mb-2" id="modal-voucher-title">Confirm Voucher Redemption</h4>
+<p class="text-xs text-on-surface-variant" id="modal-voucher-desc">Are you sure you want to spend points for this voucher?</p>
+<div class="my-3 p-3 bg-surface-container-low rounded-xl text-xs space-y-1">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Required Points:</span>
+<span class="font-bold text-primary" id="modal-voucher-cost">500 pts</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Remaining Balance:</span>
+<span class="font-bold text-on-surface" id="modal-voucher-after">250 pts</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-4">
+<button class="py-2 rounded-lg border border-outline-variant text-xs font-semibold" onclick="closeRedeemModal()">Cancel</button>
+<button class="py-2 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-primary-container active:scale-95 shadow" onclick="executeRedeem()">Confirm Redeem</button>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- SCREEN 6: SUSTAINABILITY IMPACT & HISTORY  -->
+<!-- ========================================== -->
+<section class="screen-view flex-col flex-1 px-4 py-4 bg-surface-container-low pb-28 overflow-y-auto no-scrollbar hidden" id="screen-impact">
+<!-- Top Title -->
+<div class="mb-3">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-secondary-container text-on-secondary-container">
+          Household Ecological Audit
+        </span>
+<h2 class="text-lg font-headline-lg font-bold text-primary mt-1">Sustainability Impact &amp; History</h2>
+<p class="text-xs text-on-surface-variant">Measurable carbon abatement certified under Sime Darby Circularity.</p>
+</div>
+<!-- Estimated Environmental Impact Card -->
+<div class="p-4 rounded-2xl bg-gradient-to-br from-tertiary via-primary to-primary-container text-on-primary shadow-[0_8px_24px_-4px_rgba(32,79,39,0.2)] mb-4">
+<div class="flex justify-between items-center mb-3">
+<span class="text-xs font-semibold text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">eco</span> Illustrative Lifecycle Estimate
+          </span>
+<span class="text-[9px] uppercase px-2 py-0.5 rounded bg-white/10 text-white font-mono">ISCC Certified</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center pt-1">
+<div class="p-2 rounded-xl bg-white/10">
+<span class="block font-headline-md font-bold text-lg text-white" id="impact-co2">49.0</span>
+<span class="text-[10px] text-primary-fixed leading-tight">kg CO₂e Avoided</span>
+</div>
+<div class="p-2 rounded-xl bg-white/10">
+<span class="block font-headline-md font-bold text-lg text-white" id="impact-biofuel">15.4</span>
+<span class="text-[10px] text-primary-fixed leading-tight">Liters Clean Biofuel</span>
+</div>
+<div class="p-2 rounded-xl bg-white/10">
+<span class="block font-headline-md font-bold text-lg text-white" id="impact-water">17,500</span>
+<span class="text-[10px] text-primary-fixed leading-tight">Liters Water Guarded</span>
+</div>
+</div>
+<p class="text-[10px] text-white/70 mt-3 italic text-center">
+          *Calculated at 2.80 kg CO₂e offset per 1.0 kg Used Cooking Oil redirected from drainage.
+        </p>
+</div>
+<!-- 4-Stage Circularity Trail Visual -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)] mb-4">
+<h4 class="text-xs font-bold text-on-surface mb-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">alt_route</span>
+<span class="">4-Stage Oil-to-Aviation Trail</span>
+</h4>
+<div class="relative pl-6 space-y-3 pt-1">
+<!-- Step 1 -->
+<div class="relative">
+<div class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-white text-[9px] font-bold">1</div>
+<p class="text-xs font-bold text-on-surface leading-tight">Household Cold Storage</p>
+<p class="text-[10px] text-on-surface-variant">Sieved, cooled, and securely bottled in Elmina kitchen.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-white text-[9px] font-bold">2</div>
+<p class="text-xs font-bold text-on-surface leading-tight">Aggregated Smart Kiosk</p>
+<p class="text-[10px] text-on-surface-variant">Auto-weighed, quality sensors inspect free fatty acid &amp; water %.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-white text-[9px] font-bold">3</div>
+<p class="text-xs font-bold text-on-surface leading-tight">Refinery Hydrotreatment</p>
+<p class="text-[10px] text-on-surface-variant">Converted via HEFA process into clean HVO and bio-diesel.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative">
+<div class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[9px] font-bold">4</div>
+<p class="text-xs font-bold text-on-surface leading-tight">Sustainable Aviation Fuel (SAF)</p>
+<p class="text-[10px] text-on-surface-variant">Supplied for green airline flights departing KLIA &amp; Subang.</p>
+</div>
+</div>
+</div>
+<!-- Transaction History with Live Filter -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-[0_4px_16px_-4px_rgba(56,103,61,0.06)]">
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xs font-bold text-on-surface uppercase tracking-wider">Deposit Ledger</h4>
+<div class="flex gap-1 text-[10px]">
+<button class="px-2 py-0.5 rounded font-bold bg-primary text-white" id="filter-all" onclick="filterTransactions('all')">All</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:bg-surface-container" id="filter-verified" onclick="filterTransactions('verified')">Verified</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:bg-surface-container" id="filter-pending" onclick="filterTransactions('pending')">Pending</button>
+</div>
+</div>
+<div class="space-y-2 mt-2 divide-y divide-outline-variant/20 text-xs" id="tx-history-list">
+        <div class="pt-2 flex justify-between items-center">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-on-surface">Elmina Central Kiosk #01</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[9px] font-semibold bg-secondary-container text-on-secondary-container">VERIFIED</span>
+            </div>
+            <p class="text-[10px] text-on-surface-variant mt-0.5">Today, 10:15 AM • Ref: <span class="font-mono text-outline">UCO-ELM-98421</span></p>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-tertiary text-xs">+210 pts</span>
+            <span class="block text-[10px] text-outline">4.2 kg UCO</span>
+          </div>
+        </div>
+      
+        <div class="pt-2 flex justify-between items-center">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-on-surface">Elmina East Pavilion Hub</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[9px] font-semibold bg-secondary-container text-on-secondary-container">VERIFIED</span>
+            </div>
+            <p class="text-[10px] text-on-surface-variant mt-0.5">12 May 2025 • Ref: <span class="font-mono text-outline">UCO-ELM-96112</span></p>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-tertiary text-xs">+255 pts</span>
+            <span class="block text-[10px] text-outline">5.1 kg UCO</span>
+          </div>
+        </div>
+      
+        <div class="pt-2 flex justify-between items-center">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-on-surface">Elmina Central Kiosk #02</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[9px] font-semibold bg-secondary-container text-on-secondary-container">VERIFIED</span>
+            </div>
+            <p class="text-[10px] text-on-surface-variant mt-0.5">28 Apr 2025 • Ref: <span class="font-mono text-outline">UCO-ELM-93240</span></p>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-tertiary text-xs">+240 pts</span>
+            <span class="block text-[10px] text-outline">4.8 kg UCO</span>
+          </div>
+        </div>
+      
+        <div class="pt-2 flex justify-between items-center">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-on-surface">Elmina Green Community Kiosk</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[9px] font-semibold bg-secondary-container text-on-secondary-container">VERIFIED</span>
+            </div>
+            <p class="text-[10px] text-on-surface-variant mt-0.5">14 Apr 2025 • Ref: <span class="font-mono text-outline">UCO-ELM-89104</span></p>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-tertiary text-xs">+170 pts</span>
+            <span class="block text-[10px] text-outline">3.4 kg UCO</span>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- BOTTOM NAVIGATION BAR (Exact 5 Items)      -->
+<!-- Order: Home, Rewards, Scan QR, Impact, Guide-->
+<!-- ========================================== -->
+<nav class="fixed bottom-0 left-0 right-0 w-full max-w-md mx-auto z-50 bg-surface-container-lowest shadow-[0_-4px_24px_rgba(0,0,0,0.08)] border-t border-outline-variant/30 px-1 grid grid-cols-5 items-end pb-1 pt-0.5" id="shared-bottom-nav">
+<!-- Tab 1: Home -->
+<button class="flex flex-col items-center justify-center py-1 text-on-surface-variant hover:text-primary active:scale-95 transition-all w-full" id="nav-btn-home" onclick="switchScreen('screen-home')" style="animation-delay: 303ms;">
+<span class="material-symbols-outlined text-[23px]" id="nav-icon-home" style="animation-delay: 304ms;">home</span>
+<span class="text-[11px] font-medium text-on-surface-variant mt-1 tracking-tight" id="nav-text-home" style="animation-delay: 313ms;">Home</span>
+</button>
+<!-- Tab 2: Rewards -->
+<button class="flex flex-col items-center justify-center py-1 text-on-surface-variant hover:text-primary active:scale-95 transition-all w-full" id="nav-btn-rewards" onclick="switchScreen('screen-rewards')" style="animation-delay: 303ms;">
+<span class="material-symbols-outlined text-[23px]" id="nav-icon-rewards" style="animation-delay: 304ms;">card_giftcard</span>
+<span class="text-[11px] font-medium text-on-surface-variant mt-1 tracking-tight" id="nav-text-rewards" style="animation-delay: 313ms;">Rewards</span>
+</button>
+<!-- Tab 3 (CENTER / HERO): Scan QR -->
+<button aria-label="Scan Kiosk QR Code" class="flex flex-col items-center justify-center relative group active:scale-95 transition-all w-full -top-4" id="nav-btn-scan" onclick="switchScreen('screen-scan')">
+<div class="w-[52px] h-[52px] rounded-2xl bg-[#27834A] hover:bg-[#20703e] text-white flex items-center justify-center shadow-[0_6px_18px_rgba(39,131,74,0.4)] ring-4 ring-surface-container-lowest transition-transform group-hover:scale-105">
+<span class="material-symbols-outlined text-[26px] text-white font-bold">qr_code_scanner</span>
+</div>
+<span class="text-[11px] font-bold text-[#27834A] mt-1 tracking-tight underline underline-offset-2" id="nav-text-scan" style="animation-delay: 309ms;">QR Code</span>
+</button>
+<!-- Tab 4: Impact -->
+<button class="flex flex-col items-center justify-center py-1 text-on-surface-variant hover:text-primary active:scale-95 transition-all w-full" id="nav-btn-impact" onclick="switchScreen('screen-impact')" style="animation-delay: 303ms;">
+<span class="material-symbols-outlined text-[23px]" id="nav-icon-impact" style="animation-delay: 304ms;">eco</span>
+<span class="text-[11px] font-medium text-on-surface-variant mt-1 tracking-tight" id="nav-text-impact" style="animation-delay: 313ms;">Impact</span>
+</button>
+<!-- Tab 5: Storage Guide -->
+<button class="flex flex-col items-center justify-center py-1 text-on-surface-variant hover:text-primary active:scale-95 transition-all w-full" id="nav-btn-guide" onclick="switchScreen('screen-storage-guide')" style="animation-delay: 304ms;">
+<span class="material-symbols-outlined text-[23px]" id="nav-icon-guide" style="animation-delay: 305ms;">menu_book</span>
+<span class="text-[11px] font-medium text-on-surface-variant mt-1 tracking-tight text-center leading-tight whitespace-nowrap" id="nav-text-guide" style="animation-delay: 314ms;">Storage Guide</span>
+</button>
+</nav>
+<!-- FLOATING TOAST NOTIFIER -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full text-xs font-medium shadow-lg transition-all duration-300 flex items-center gap-1.5 max-w-xs text-center opacity-0 pointer-events-none" id="toast">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">check_circle</span>
+<span class="" id="toast-text">No new unread alerts</span>
+</div>
+</main>
+<!-- JAVASCRIPT STATE ENGINE & SCREEN SWITCHER -->
+<script>
+    // Global State for Interactive Simulation
+    const initialAppState = {
+      ecoPoints: 750,
+      totalKg: 17.5,
+      totalDrops: 4,
+      redeemedVouchers: [
+        { title: 'RM5 Grocer Voucher (Welcome Perk)', code: 'ELMINA-WELCOME-7729', date: 'Active' }
+      ],
+      transactions: [
+        {
+          ref: 'UCO-ELM-98421',
+          date: 'Today, 10:15 AM',
+          station: 'Elmina Central Kiosk #01',
+          weight: 4.2,
+          points: 210,
+          status: 'verified'
+        },
+        {
+          ref: 'UCO-ELM-96112',
+          date: '12 May 2025',
+          station: 'Elmina East Pavilion Hub',
+          weight: 5.1,
+          points: 255,
+          status: 'verified'
+        },
+        {
+          ref: 'UCO-ELM-93240',
+          date: '28 Apr 2025',
+          station: 'Elmina Central Kiosk #02',
+          weight: 4.8,
+          points: 240,
+          status: 'verified'
+        },
+        {
+          ref: 'UCO-ELM-89104',
+          date: '14 Apr 2025',
+          station: 'Elmina Green Community Kiosk',
+          weight: 3.4,
+          points: 170,
+          status: 'verified'
+        }
+      ]
+    };
+
+    let appState = JSON.parse(JSON.stringify(initialAppState));
+    let pendingRedeemData = null;
+
+    // Screen Switching & Active Navigation Synchronization
+    function switchScreen(screenId) {
+      // Hide all screens
+      const screens = document.querySelectorAll('.screen-view');
+      screens.forEach(s => {
+        s.classList.add('hidden');
+        s.classList.remove('flex');
+      });
+
+      // Show target screen
+      const target = document.getElementById(screenId);
+      if (target) {
+        target.classList.remove('hidden');
+        target.classList.add('flex');
+      }
+
+      // Semantic Shell Rule: Suppress or configure TopAppBar / BottomNavBar
+      const topBar = document.getElementById('shared-top-bar');
+      const bottomNav = document.getElementById('shared-bottom-nav');
+
+      if (screenId === 'screen-login') {
+        topBar.classList.add('hidden');
+        bottomNav.classList.add('hidden');
+      } else {
+        topBar.classList.remove('hidden');
+        bottomNav.classList.remove('hidden');
+      }
+
+      // Update Bottom Nav Active States strictly adhering to tokens
+      updateNavActiveState(screenId);
+
+      // Render updated figures
+      renderStateUI();
+      window.scrollTo(0, 0);
+    }
+
+    function updateNavActiveState(screenId) {
+      const tabs = [
+        { id: 'nav-btn-home', iconId: 'nav-icon-home', textId: 'nav-text-home', screen: 'screen-home' },
+        { id: 'nav-btn-rewards', iconId: 'nav-icon-rewards', textId: 'nav-text-rewards', screen: 'screen-rewards' },
+        { id: 'nav-btn-impact', iconId: 'nav-icon-impact', textId: 'nav-text-impact', screen: 'screen-impact' },
+        { id: 'nav-btn-guide', iconId: 'nav-icon-guide', textId: 'nav-text-guide', screen: 'screen-storage-guide' }
+      ];
+
+      tabs.forEach(tab => {
+        const btn = document.getElementById(tab.id);
+        const icon = document.getElementById(tab.iconId);
+        const text = document.getElementById(tab.textId);
+        if (!btn || !icon || !text) return;
+
+        if (tab.screen === screenId) {
+          btn.className = "flex flex-col items-center justify-center py-1 text-primary active:scale-95 transition-all w-full";
+          icon.className = "material-symbols-outlined text-[23px] text-primary fill-1";
+          text.className = "text-[11px] font-semibold text-primary mt-1 tracking-tight" + (tab.id === 'nav-btn-guide' ? " text-center leading-tight whitespace-nowrap" : "");
+        } else {
+          btn.className = "flex flex-col items-center justify-center py-1 text-on-surface-variant hover:text-primary active:scale-95 transition-all w-full";
+          icon.className = "material-symbols-outlined text-[23px]";
+          text.className = "text-[11px] font-medium text-on-surface-variant mt-1 tracking-tight" + (tab.id === 'nav-btn-guide' ? " text-center leading-tight whitespace-nowrap" : "");
+        }
+      });
+
+      // Central Hero tab active styling
+      const scanBtnText = document.getElementById('nav-text-scan');
+      if (scanBtnText) {
+        if (screenId === 'screen-scan') {
+          scanBtnText.className = "text-[11px] font-bold text-[#27834A] mt-1 tracking-tight underline underline-offset-2";
+        } else {
+          scanBtnText.className = "text-[11px] font-semibold text-[#27834A] mt-1 tracking-tight";
+        }
+      }
+    }
+
+    // Refresh Live DOM metrics
+    function renderStateUI() {
+      // Home Screen metrics
+      const ptsEl = document.getElementById('dashboard-points');
+      if (ptsEl) ptsEl.innerText = appState.ecoPoints;
+
+      const kgEl = document.getElementById('dashboard-total-kg');
+      if (kgEl) kgEl.innerText = appState.totalKg.toFixed(1);
+
+      const dropsEl = document.getElementById('dashboard-total-drops');
+      if (dropsEl) dropsEl.innerText = appState.totalDrops;
+
+      // Rewards screen balance
+      const rwdPtsEl = document.getElementById('rewards-screen-balance');
+      if (rwdPtsEl) rwdPtsEl.innerText = appState.ecoPoints;
+
+      // Impact screen calculations
+      const co2El = document.getElementById('impact-co2');
+      if (co2El) co2El.innerText = (appState.totalKg * 2.80).toFixed(1);
+
+      const biofuelEl = document.getElementById('impact-biofuel');
+      if (biofuelEl) biofuelEl.innerText = (appState.totalKg * 0.88).toFixed(1);
+
+      const waterEl = document.getElementById('impact-water');
+      if (waterEl) waterEl.innerText = Math.round(appState.totalKg * 1000).toLocaleString();
+
+      // Render Transaction history
+      renderHistoryList('all');
+
+      // Update Home Recent Transaction snippet
+      if (appState.transactions.length > 0) {
+        const latest = appState.transactions[0];
+        document.getElementById('recent-station').innerText = latest.station;
+        document.getElementById('recent-date').innerText = `${latest.date} • ${latest.weight} kg`;
+        document.getElementById('recent-pts').innerText = `+${latest.points} pts`;
+      }
+    }
+
+    function renderHistoryList(filter) {
+      const container = document.getElementById('tx-history-list');
+      if (!container) return;
+
+      const filtered = appState.transactions.filter(t => {
+        if (filter === 'all') return true;
+        return t.status === filter;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '<div class="py-4 text-center text-outline text-xs">No records found for this filter.</div>';
+        return;
+      }
+
+      container.innerHTML = filtered.map(t => `
+        <div class="pt-2 flex justify-between items-center">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-on-surface">${t.station}</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[9px] font-semibold ${t.status === 'verified' ? 'bg-secondary-container text-on-secondary-container' : 'bg-surface-variant text-on-surface-variant'}">${t.status.toUpperCase()}</span>
+            </div>
+            <p class="text-[10px] text-on-surface-variant mt-0.5">${t.date} &bull; Ref: <span class="font-mono text-outline">${t.ref}</span></p>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-tertiary text-xs">+${t.points} pts</span>
+            <span class="block text-[10px] text-outline">${t.weight.toFixed(1)} kg UCO</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterTransactions(type) {
+      ['filter-all', 'filter-verified', 'filter-pending'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.className = "px-2 py-0.5 rounded text-on-surface-variant hover:bg-surface-container";
+      });
+      const activeEl = document.getElementById(`filter-${type}`);
+      if (activeEl) {
+        activeEl.className = "px-2 py-0.5 rounded font-bold bg-primary text-white";
+      }
+      renderHistoryList(type);
+    }
+
+    // Login Form Submit simulation
+    function handleLoginSubmit(e) {
+      e.preventDefault();
+      showToast('Welcome back, Alex Tan (Elmina Green 3)');
+      switchScreen('screen-home');
+    }
+
+    // Kiosk Scanner Simulation (Screen 3)
+    function triggerSimulatedScan() {
+      const randomRef = 'UCO-ELM-' + Math.floor(10000 + Math.random() * 90000);
+      document.getElementById('modal-tx-ref').innerText = randomRef;
+      document.getElementById('modal-station-name').innerText = 'Elmina Central Kiosk #02';
+      document.getElementById('modal-weight').innerText = '5.00 kg';
+      document.getElementById('modal-points').innerText = '+250 Eco-Points';
+      document.getElementById('kiosk-deposit-modal').classList.remove('hidden');
+      document.getElementById('kiosk-deposit-modal').classList.add('flex');
+    }
+
+    function openManualInput() {
+      const code = prompt("Enter 6-digit Kiosk Terminal Display Code:", "894210");
+      if (code) {
+        triggerSimulatedScan();
+      }
+    }
+
+    function closeDepositModal() {
+      document.getElementById('kiosk-deposit-modal').classList.add('hidden');
+      document.getElementById('kiosk-deposit-modal').classList.remove('flex');
+    }
+
+    function confirmDepositTransaction() {
+      closeDepositModal();
+
+      // Add to State
+      const newRef = document.getElementById('modal-tx-ref').innerText;
+      appState.ecoPoints += 250;
+      appState.totalKg += 5.0;
+      appState.totalDrops += 1;
+
+      appState.transactions.unshift({
+        ref: newRef,
+        date: 'Just now',
+        station: 'Elmina Central Kiosk #02',
+        weight: 5.0,
+        points: 250,
+        status: 'verified'
+      });
+
+      renderStateUI();
+      showToast('Deposit Verified: +250 points added to Alex Tan!');
+      switchScreen('screen-home');
+    }
+
+    // Reward Redemption Flow (Screen 5)
+    function promptRedeem(title, cost, code) {
+      if (appState.ecoPoints < cost) {
+        alert(`Insufficient Eco-Points! You need ${cost} points, but your balance is ${appState.ecoPoints}. Drop off more UCO to earn points.`);
+        return;
+      }
+
+      pendingRedeemData = { title, cost, code };
+      document.getElementById('modal-voucher-title').innerText = title;
+      document.getElementById('modal-voucher-cost').innerText = `${cost} pts`;
+      document.getElementById('modal-voucher-after').innerText = `${appState.ecoPoints - cost} pts`;
+      document.getElementById('reward-confirm-modal').classList.remove('hidden');
+      document.getElementById('reward-confirm-modal').classList.add('flex');
+    }
+
+    function closeRedeemModal() {
+      document.getElementById('reward-confirm-modal').classList.add('hidden');
+      document.getElementById('reward-confirm-modal').classList.remove('flex');
+      pendingRedeemData = null;
+    }
+
+    function executeRedeem() {
+      if (!pendingRedeemData) return;
+      appState.ecoPoints -= pendingRedeemData.cost;
+      
+      // Append to redeemed vouchers list
+      appState.redeemedVouchers.unshift({
+        title: pendingRedeemData.title,
+        code: pendingRedeemData.code,
+        date: 'Active Just Now'
+      });
+
+      // Update DOM
+      document.getElementById('redeemed-count').innerText = appState.redeemedVouchers.length;
+      const listEl = document.getElementById('redeemed-vouchers-list');
+      const newCard = document.createElement('div');
+      newCard.className = "p-3 bg-surface-container-lowest rounded-xl border border-secondary/30";
+      newCard.innerHTML = `
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-[10px] uppercase font-bold text-tertiary">Ready to Use at Counter</span>
+            <h5 class="text-xs font-bold text-on-surface">${pendingRedeemData.title}</h5>
+          </div>
+          <span class="px-2 py-0.5 rounded text-[9px] font-bold bg-secondary-container text-on-secondary-container">ACTIVE</span>
+        </div>
+        <div class="mt-2 p-2 bg-surface-container-low rounded font-mono text-[11px] flex justify-between items-center">
+          <span>${pendingRedeemData.code}</span>
+          <span class="material-symbols-outlined text-base text-outline">qr_code</span>
+        </div>
+      `;
+      listEl.prepend(newCard);
+
+      closeRedeemModal();
+      renderStateUI();
+      showToast(`Voucher Unlocked! ${pendingRedeemData.title}`);
+    }
+
+    // Reset Demo Data helper for testing
+    function resetDemoData() {
+      appState = JSON.parse(JSON.stringify(initialAppState));
+      document.getElementById('redeemed-count').innerText = appState.redeemedVouchers.length;
+      document.getElementById('redeemed-vouchers-list').innerHTML = `
+        <div class="p-3 bg-surface-container-lowest rounded-xl border border-secondary/30">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-tertiary">Ready to Use at Counter</span>
+              <h5 class="text-xs font-bold text-on-surface">${pendingRedeemData.title}</h5>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[9px] font-bold bg-secondary-container text-on-secondary-container">ACTIVE</span>
+          </div>
+          <div class="mt-2 p-2 bg-surface-container-low rounded font-mono text-[11px] flex justify-between items-center">
+            <span>ELMINA-WELCOME-7729</span>
+            <span class="material-symbols-outlined text-base text-outline">qr_code</span>
+          </div>
+        </div>
+      `;
+      renderStateUI();
+      showToast('Demo data reset to baseline');
+    }
+
+    // Lightweight Toast Utility
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toast-text');
+      text.innerText = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+
+    // Initialization: Start on Screen 4 (Home)
+    document.addEventListener('DOMContentLoaded', () => {
+      renderStateUI();
+      switchScreen('screen-home');
+    });
+  </script>
+
+
+
+
+
+
+
+
+</body></html>
